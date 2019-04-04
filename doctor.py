@@ -1,10 +1,3 @@
-def cost(S, D):
-    # This function should take a solution S and the distance matrix D
-    # and return its (float) cost. You will need to input your code here. 
-    # You are welcome to include other parameters if needed
-    return 0.0
-
-
 # Main Program: First ask the user to specify the input file.
 filename = input("Enter problem file name >> ")
 
@@ -35,15 +28,3 @@ with open(filename, "r") as f:
             D[i][j] = float(line[j])
 
 print(filename + " has been read in correctly.")
-
-# The next stage is to produce a solution S and evaluate it via a cost function
-S = [[] for i in range(n1)]
-
-# The following lines are for testing purposes and can be deleted
-print("n1      = " + str(n1))
-print("n2      = " + str(n2))
-print("m       = " + str(m))
-print("coords  = " + str(coords))
-print("D       = " + str(D))
-print("S       = " + str(S))
-print("cost(S) = " + str(cost(S, D)))
